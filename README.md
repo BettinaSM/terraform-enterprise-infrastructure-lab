@@ -65,3 +65,18 @@ The project follows DevSecOps principles by integrating:
 - Modular infrastructure design
 - Cloud governance concepts
 - Repeatable infrastructure provisioning
+
+---
+
+## Security Pipeline
+
+This project includes a Terraform security pipeline using GitHub Actions.
+
+Implemented validations:
+
+- terraform fmt
+- terraform validate
+- tfsec security scanning
+- Checkov infrastructure analysis
+
+The pipeline simulates enterprise DevSecOps validation workflows.

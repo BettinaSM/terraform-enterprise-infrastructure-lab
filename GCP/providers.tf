@@ -8,3 +8,8 @@ terraform {
     }
   }
 }
+
+provider "google" {
+  project = "demo-project"
+  region  = "us-central1"
+}

@@ -10,3 +10,8 @@ provider "google" {
 resource "google_compute_network" "vpc_network" {
   name = "enterprise-network"
 }
+
+resource "google_storage_bucket" "logs_bucket" {
+  name     = "enterprise-security-logs"
+  location = "US"
+}

@@ -17,3 +17,8 @@
 ## Phase 4
 - Kubernetes integration
 - Observability integration
+
+## Phase 5
+- Policy as Code
+- OPA/Rego integration
+- Governance simulation

@@ -40,3 +40,28 @@ aws/
 gcp/
 modules/
 docs/
+
+---
+
+## Security Controls
+
+This lab simulates enterprise security controls including:
+
+- IAM role segregation
+- Secure network segmentation
+- Restricted SSH access
+- Cloud storage security concepts
+- Infrastructure baseline hardening
+- Multi-cloud governance concepts
+
+---
+
+## DevSecOps Concepts
+
+The project follows DevSecOps principles by integrating:
+
+- Infrastructure as Code
+- Security-by-default configurations
+- Modular infrastructure design
+- Cloud governance concepts
+- Repeatable infrastructure provisioning

@@ -40,6 +40,7 @@ aws/
 gcp/
 modules/
 docs/
+```
 
 ---
 
@@ -94,3 +95,49 @@ Implemented security policies:
 - Infrastructure governance concepts
 
 These controls simulate enterprise cloud governance and DevSecOps guardrails.
+
+---
+
+## Enterprise Security Concepts
+
+This lab simulates enterprise infrastructure and cloud security practices including:
+
+- Multi-cloud architecture (AWS/GCP)
+- Infrastructure as Code (IaC)
+- IAM governance concepts
+- Secure network segmentation
+- Security baseline controls
+- DevSecOps security validation
+- Policy as Code using OPA/Rego
+- Infrastructure governance workflows
+
+The project follows a modular enterprise-oriented design approach.
+
+---
+
+## Terraform Security Pipeline
+
+The project includes a GitHub Actions security pipeline with:
+
+- terraform fmt
+- terraform validate
+- tfsec
+- Checkov
+
+This simulates enterprise-grade DevSecOps validation and Infrastructure as Code governance.
+
+---
+
+## Policy as Code
+
+Policy as Code is implemented using Open Policy Agent (OPA) and Rego policies.
+
+Current governance rules include:
+
+- Deny public SSH exposure
+- Deny insecure cloud storage configurations
+- Infrastructure security guardrails
+
+This approach helps enforce secure-by-default infrastructure standards.
+
+

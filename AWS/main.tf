@@ -34,3 +34,24 @@ resource "aws_security_group" "secure_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+resource "aws_s3_bucket" "secure_logs" {
+  bucket = "enterprise-secure-logs"
+
+  tags = {
+    Environment = "SecurityLab"
+  }
+}
+resource "aws_iam_role" "security_role" {
+  name = "security-audit-role"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [{
+      Action = "sts:AssumeRole"
+      Effect = "Allow"
+      Principal = {
+        Service = "ec2.amazonaws.com"
+      }
+    }]
+  })
+}

@@ -17,3 +17,13 @@
 - Secure-by-default mindset
 - Modular architecture
 - Repeatable provisioning
+
+## Governance & Policy
+
+The project demonstrates foundational Policy as Code concepts using OPA/Rego.
+
+Security policies help prevent:
+
+- Public SSH exposure
+- Public cloud storage
+- Insecure infrastructure configurations

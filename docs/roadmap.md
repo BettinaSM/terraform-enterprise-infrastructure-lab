@@ -22,3 +22,11 @@
 - Policy as Code
 - OPA/Rego integration
 - Governance simulation
+
+## Future Improvements
+
+- Kubernetes provisioning
+- Runtime security validation
+- Centralized observability integration
+- SIEM integration
+- Cloud compliance simulation

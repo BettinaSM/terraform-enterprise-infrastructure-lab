@@ -80,3 +80,17 @@ Implemented validations:
 - Checkov infrastructure analysis
 
 The pipeline simulates enterprise DevSecOps validation workflows.
+
+---
+
+## Policy as Code
+
+This project includes Policy as Code concepts using Open Policy Agent (OPA).
+
+Implemented security policies:
+
+- Deny public SSH exposure
+- Deny public cloud storage
+- Infrastructure governance concepts
+
+These controls simulate enterprise cloud governance and DevSecOps guardrails.

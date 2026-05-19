@@ -1,0 +1,40 @@
+name: Terraform Security Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+  terraform-security:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+
+    - name: Terraform Format Check
+      run: terraform fmt -check -recursive
+
+    - name: Terraform Init AWS
+      run: |
+        cd aws
+        terraform init
+
+    - name: Terraform Validate AWS
+      run: |
+        cd aws
+        terraform validate
+
+    - name: Run tfsec
+      uses: aquasecurity/tfsec-action@v1.0.3
+
+    - name: Run Checkov
+      uses: bridgecrewio/checkov-action@master

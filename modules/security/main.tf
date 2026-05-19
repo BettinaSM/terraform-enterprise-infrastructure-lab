@@ -1,3 +1,3 @@
-resource "aws_security_group" "secure_baseline" {
-  name = "secure-baseline"
+resource "aws_security_group" "secure_sg" {
+  name = "enterprise-secure-group"
 }
